@@ -7,3 +7,5 @@ If you commit, please write a full description of what you've done!
 ----------------
 Thank you, team!
 You are great!
+
+You are welcome
