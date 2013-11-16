@@ -1,6 +1,9 @@
-aDevDocs
-========
+Readme
+----------------
+All documentations for Android App(Bar/QR reader)
 
-Documents (android dev team)
+If you commit, please write a full description of what you've done!
 
-Use this documentations for our team project.
+----------------
+Thank you, team!
+You are great!
