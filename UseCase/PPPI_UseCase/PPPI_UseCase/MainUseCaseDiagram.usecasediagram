@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="5c701574-69de-4be8-a4d7-fe8fc359f608" name="MainUseCaseDiagram" linkedPackageId="b4a9c277-ae01-4ab0-96ab-0ef3593d95fb" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="6c50636f-9b12-4092-8c7f-11b2b4b8363a">
+      <profileInstance Id="f30d643e-3ca3-43c1-82f1-b6d95051f7e4" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="83966919-e349-461c-85cf-8e676b19060a">
+      <profileInstance Id="80e94de2-9cfc-456b-bea1-f596432c62f8" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="7c1f7613-86ba-4aa8-aad2-8f5781513aa8" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1987343c-352e-4b8c-b3b6-6d6d0aabc468" />
+        <targetEnds>
+          <association Id="0ca901e2-4f70-4e18-9c4e-49b9647ef15a" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Work With DB" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="185ef0a0-d0dc-485d-894e-02376989efea" LastKnownName="Work With DB" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c6fb2085-39b2-4284-8ce4-675377cd35fb" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3d9efe0e-afdb-4ff6-aebc-1de6394ca258" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d314d001-b99c-474d-a761-2f0ec17687b1" name="Work With DB" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="45ba5b77-97e1-4cdf-9089-076f1f3a72ef" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="23fe9923-51b2-420b-bd5a-c4f4d733425b" />
+          </association>
+          <association Id="876a1d12-50f5-4f8e-8e23-1a1f5f556edc" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Sell Good" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="383fe633-06e0-466c-acec-153ca3d3a8cf" LastKnownName="Sell Good" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3428d38c-238a-4d5f-a41c-5ae267afbd34" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8c39443c-3062-4bdb-9f98-322437e54da5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cba595ff-d11f-4cda-a29a-1f91f9e3b93c" name="Sell Good" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0a7d1308-e1aa-44fa-87bf-51f495bbf3c3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="51a58ccf-2a03-4f85-ab69-6603edddec6a" />
+          </association>
+          <association Id="29b6d57c-012c-4c8b-8b95-c03f22646fbb" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Gold Good" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c4b42250-29c3-4525-a8a7-b08e66a6e8fc" LastKnownName="Gold Good" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="afdf9079-b4df-4c81-be30-ee81dc28592d" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f9933474-de1e-487e-bb55-ef26ca436645" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5421a0fc-7894-4793-889c-56c5e5088ccb" name="Gold Good" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a81f9f98-b20e-457b-9a17-45a5cfa876c9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f7499147-ba6f-41e3-9e8a-f24e18bb9e7c" />
+          </association>
+          <association Id="272e6d30-06c5-4a28-9a08-b9448dc99509" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Work With Sell History" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d482301f-9111-42c2-b6eb-5380d182ac66" LastKnownName="Work With Sell History" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="43a3115a-7402-4ad9-ae6e-bcb5da7ac737" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="994f02a6-5eb6-40f7-8285-8787d18dfd81" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e31c9fe4-811b-43f6-a954-19b98df907c0" name="Work With Sell History" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ba93039f-3a53-4eb2-8e1f-8b895d51a62a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6b287358-d24a-4052-9c25-33398caf99d1" />
+          </association>
+          <association Id="dcbde086-1bfa-48f3-a726-50f061885a39" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Work With Temp Order List" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d53a0db7-b34f-4ee0-addf-3cbed8a25ee9" LastKnownName="Work With Temp Order List" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a4a502cd-1804-4231-a76e-d2e896d9533a" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="82b5218b-cf55-465f-901e-ecf8811343a5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="887a7496-ff00-4a3d-a331-986ec4f7f9e1" name="Work With Temp Order List" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="82d8fe9f-e68c-402d-8e90-39e0fd9ac927" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f5ab4360-bdb3-42e4-a28d-dc847af46e8d" />
+          </association>
+          <association Id="deabb70e-c283-4997-bc27-5eeb2493b124" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Work With Order List" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0044a46a-b50f-4d7b-88dd-f3b6148a635c" LastKnownName="Work With Order List" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="008f1090-3aed-4d48-b6c2-e7eae357d1e1" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="550be012-6575-4d4b-a6dc-ddfb48214297" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="27f17bd4-c511-4a21-8c0d-1eb3d8b483b1" name="Work With Order List" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3a3811ea-65c2-406e-8284-7f82b6b2e6d5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b0a8a318-ca72-4141-b48d-039985ca6547" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="99741b2b-e985-4f89-9c86-86bd67c22b4e" name="Fill into" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="10047161-f554-41c8-997a-eccdb201f353" />
+        <extendedCases>
+          <extend Id="4db5c053-efc7-4088-885a-765563ea8f98">
+            <useCaseMoniker Id="c4b42250-29c3-4525-a8a7-b08e66a6e8fc" LastKnownName="Gold Good" />
+            <elementDefinition Id="7b5cf9fa-2d91-4a21-851c-51228888bd08" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e1bd2acb-b032-4512-8f7b-a3221003dc87" name="Add To Temp Order List" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fc02efc9-91c6-42f8-9d9d-93df00342dce" />
+        <extendedCases>
+          <extend Id="b68464ea-1d3e-4379-b97d-7ca59f5f7424">
+            <useCaseMoniker Id="383fe633-06e0-466c-acec-153ca3d3a8cf" LastKnownName="Sell Good" />
+            <elementDefinition Id="e39ff1b6-ba79-410c-92e6-6975b62c2fff" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="383fe633-06e0-466c-acec-153ca3d3a8cf" name="Sell Good" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4d6650ab-c6b3-471b-aa4b-feafeca95513" />
+        <targetEnds>
+          <association Id="5773e004-71b0-4f51-b7f6-129ee9f0b10f" isDerived="false" sourceEndRoleName="Sell Good" targetEndRoleName="Add To Sell History" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3e29e548-bfaf-4355-a72f-3acfea4180f5" LastKnownName="Add To Sell History" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a9ad0881-c458-49e7-b14c-ea4e606d0cdf" name="Sell Good" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e166d514-c571-495e-9d45-04ff12e3ddfa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0e620c9f-fdcd-4c9e-9e6e-7ffeaf3412de" name="Add To Sell History" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5d2dee20-6b9c-4064-990f-0b82271d016a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="892d18c0-5cbf-4001-85e8-d3ac691558f9" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3e29e548-bfaf-4355-a72f-3acfea4180f5" name="Add To Sell History" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fa4b3cd9-12e5-488c-989e-9e2c5dda6442" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c4b42250-29c3-4525-a8a7-b08e66a6e8fc" name="Gold Good" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9dd94648-819b-496b-beb6-6df011f19170" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ce52c38b-0cff-4fbb-bb84-986508a390d5" name="Edit Goods" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="99393f74-ab2f-4cc5-8916-f8f2f201a828" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="707f5dec-d737-4f33-8b0e-08348ca1516a" name="Import/Export" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ef46a927-fe0a-451c-acd1-6cc8e052a069" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="185ef0a0-d0dc-485d-894e-02376989efea" name="Work With DB" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d7ddbd86-1f12-402a-a15f-e4966601bc3e" />
+        <additions>
+          <include Id="e63764ff-afbb-4c6e-bf0b-f36c5ee51973">
+            <useCaseMoniker Id="ce52c38b-0cff-4fbb-bb84-986508a390d5" LastKnownName="Edit Goods" />
+            <elementDefinition Id="cc752083-405c-4cdc-ace3-9f59b42e0708" />
+          </include>
+          <include Id="62dd579e-8dca-459e-9223-4658a3118fb7">
+            <useCaseMoniker Id="707f5dec-d737-4f33-8b0e-08348ca1516a" LastKnownName="Import/Export" />
+            <elementDefinition Id="ce23a9b1-978b-48ed-90e6-d66a1cb04f7a" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d482301f-9111-42c2-b6eb-5380d182ac66" name="Work With Sell History" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="414f5464-62e8-4faa-b618-910d9d0f8a90" />
+        <additions>
+          <include Id="6ea1897f-a4ff-4369-991d-c88f91f1e125">
+            <useCaseMoniker Id="8ca0059f-6599-44ca-9c05-87ff7e9de0e6" LastKnownName="Find/Sort" />
+            <elementDefinition Id="070d2103-92ee-4d5c-8145-3e240f6d00da" />
+          </include>
+          <include Id="297f85c5-1e0d-42f7-834d-546a12dd7af7">
+            <useCaseMoniker Id="7a6ea27c-2b0e-48d9-92d7-8b9ead7b1c66" LastKnownName="Clear" />
+            <elementDefinition Id="8f431359-cbef-448b-ba8d-0ae108c506ee" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1ea4d9f4-43bd-40f6-b534-9372db3bce6c" name="Edit" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5a25d039-d73b-43ef-aa13-fed062eb2e42" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d53a0db7-b34f-4ee0-addf-3cbed8a25ee9" name="Work With Temp Order List" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="42c37f53-ae2b-4ef6-ba2c-999462d13071" />
+        <additions>
+          <include Id="cc6209ed-3057-4992-8cca-5a1575d3184c">
+            <useCaseMoniker Id="78f60b4f-ad5c-4c5d-a4b5-e7c88b084020" LastKnownName="Watch Order List" />
+            <elementDefinition Id="3f293d78-2ff8-470e-9313-1efc9d0bcd06" />
+          </include>
+          <include Id="ffa816c0-e3e5-45b7-8f76-345aef8dbb91">
+            <useCaseMoniker Id="b95030d4-a19c-4355-acc0-7fa1bcb95184" LastKnownName="Add To Order List" />
+            <elementDefinition Id="8b1924dd-258e-445c-a270-3ba68abec85d" />
+          </include>
+          <include Id="f2013417-5f0a-45bc-adcb-5eb583e09081">
+            <useCaseMoniker Id="ea33b9fc-53cb-46f9-a102-e03ba273926f" LastKnownName="Delete Good From List" />
+            <elementDefinition Id="f9cb95e8-8e88-4991-a6dd-8543d99cf80b" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9c0a2aa0-378e-4603-a07a-624d949cc465" name="Export" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c4187726-a82d-4148-94c1-664d08462bbc" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b95030d4-a19c-4355-acc0-7fa1bcb95184" name="Add To Order List" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e1cbe6dd-43ee-4f95-9853-618c1254c82e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="78f60b4f-ad5c-4c5d-a4b5-e7c88b084020" name="Watch Order List" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7a47afbc-3fa3-4fa0-b5ce-06a24da955a2" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ea33b9fc-53cb-46f9-a102-e03ba273926f" name="Delete Good From List" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3434e2b9-1552-4a08-a47a-31fabb58a37c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0044a46a-b50f-4d7b-88dd-f3b6148a635c" name="Work With Order List" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2a32fe05-6766-45f1-b1cf-5684b84679fd" />
+        <additions>
+          <include Id="d70c3ba0-4e37-452c-97f0-197a664c17c9">
+            <useCaseMoniker Id="9c0a2aa0-378e-4603-a07a-624d949cc465" LastKnownName="Export" />
+            <elementDefinition Id="8c350fdd-d7d9-4a12-bc78-480413cd655b" />
+          </include>
+          <include Id="eb749041-6508-44b7-a295-e487533b119c">
+            <useCaseMoniker Id="1ea4d9f4-43bd-40f6-b534-9372db3bce6c" LastKnownName="Edit" />
+            <elementDefinition Id="0fb513a6-b4eb-44ee-a183-0c53df8bc5ad" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8ca0059f-6599-44ca-9c05-87ff7e9de0e6" name="Find/Sort" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a287045f-b4e8-4ae8-9472-c9f0c89dc508" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7a6ea27c-2b0e-48d9-92d7-8b9ead7b1c66" name="Clear" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c59a60fc-18bb-491f-b26c-493e96a842f0" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="b4a9c277-ae01-4ab0-96ab-0ef3593d95fb" name="PPPI_UseCase">
+    <elementDefinition Id="437ad9be-4035-404b-932c-eb464d8907c5" />
+  </package>
+</useCaseModelRoot>
