@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="244e428c-0714-4049-9591-d89537afacba" name="UMLComponentDiagram1" linkedPackageId="9141864a-010e-407d-a9de-8beed4c9addf" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="ba76ecb1-a8aa-4372-ba17-2b882c09ee26">
+      <profileInstance Id="f24184e3-0af5-4395-9d96-0175740006d4" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="fd5c4d5a-deb4-4c9a-8769-aceb11cb2f42">
+      <profileInstance Id="24fdb712-aa71-47cf-9457-843fe6a8d360" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="5fb22310-2c42-4a41-a99b-905eb163f21e" name="UIController.class" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2bee452b-1b97-4670-9cc0-3705165dd131" />
+        <suppliersInternal>
+          <dependency Id="fc14c4f7-8fb8-4e7b-a66f-c04340e58102">
+            <componentMoniker Id="fae80c1b-f0d7-42f8-95e9-2d658fb59fd2" LastKnownName="WriteToDB.j" />
+            <elementDefinition Id="5bfd0a09-2386-49a5-8504-a3423d2b3984" />
+          </dependency>
+          <dependency Id="cad0dd51-b6e9-4f02-ad82-dd972b086492">
+            <componentMoniker Id="b1f93de5-d229-41ce-9af7-9cfc767cf345" LastKnownName="ReadFromDB.j" />
+            <elementDefinition Id="a1455295-2c24-4ee0-a709-2288ad95f888" />
+          </dependency>
+          <dependency Id="6bcf871a-58e1-4b53-a9b6-a2273f6e699e">
+            <componentMoniker Id="5c551ca8-7f39-4568-ab24-5dd183215a13" LastKnownName="SellHistory.j" />
+            <elementDefinition Id="d6a57324-5a98-42c3-a9af-4bd546dbbbd8" />
+          </dependency>
+          <dependency Id="cd38cf56-0d38-4cd5-b55d-f02906893623">
+            <componentMoniker Id="4279f6d1-e5cb-4a5a-a8ae-394ee6f2947a" LastKnownName="AddGood.j" />
+            <elementDefinition Id="aa15006e-9f20-414a-a6f2-b18ec301fc9c" />
+          </dependency>
+          <dependency Id="b11620bc-f743-437e-a0dc-9d801b9be52d">
+            <componentMoniker Id="2e9041a2-0c72-4a7b-85ea-7366f5856d5e" LastKnownName="SellGood.j" />
+            <elementDefinition Id="70e08186-b726-4927-9f80-f5b4541f9a96" />
+          </dependency>
+          <dependency Id="8d01380c-5ca8-4a5b-bac9-512a6acce6c5">
+            <componentMoniker Id="bf77ff6a-cfcd-40c0-83c3-460cc40b9622" LastKnownName="TOL.j" />
+            <elementDefinition Id="3abd1bc6-53cf-4391-9102-b7d6d22abef6" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="4279f6d1-e5cb-4a5a-a8ae-394ee6f2947a" name="AddGood.j" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f4cf53ee-e9ee-440a-b454-0406e334baa4" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="2e9041a2-0c72-4a7b-85ea-7366f5856d5e" name="SellGood.j" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5cbe1498-39a5-410d-9402-d0b9793b1fd8" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="bf77ff6a-cfcd-40c0-83c3-460cc40b9622" name="TOL.j" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8f1245d7-9696-4de7-ad70-9d7402802d3b" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="3a28c089-4097-4e91-be3f-681d4c698c37" name="OL.j" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0311deb6-f218-4c75-9f9e-24c239bce134" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="fae80c1b-f0d7-42f8-95e9-2d658fb59fd2" name="WriteToDB.j" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="69195831-940d-4b61-9897-6da73e084c9a" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="b1f93de5-d229-41ce-9af7-9cfc767cf345" name="ReadFromDB.j" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3babb886-8c69-49d7-b2a4-5f848087f902" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="5c551ca8-7f39-4568-ab24-5dd183215a13" name="SellHistory.j" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="04254f87-b1c6-47dc-a275-dd2e60e7b240" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="4a6d6770-b120-4813-b45f-c65a8ec5c9c9" name="Main.apk" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fee5e2d0-10b7-4c4d-adec-657d4214fa2b" />
+        <suppliersInternal>
+          <dependency Id="a6db6c78-1c77-45dd-a2e5-2e449763a506">
+            <componentMoniker Id="5fb22310-2c42-4a41-a99b-905eb163f21e" LastKnownName="UIController.class" />
+            <elementDefinition Id="63248adf-b414-4e77-8879-1fd697e89b96" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="11ecb537-6880-4f19-b46d-663ab17d2b79" name="DataBase" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c1168888-47b4-4f9f-be36-63b1bbe73d87" />
+        <suppliersInternal>
+          <dependency Id="cf5d5c49-9196-404f-be4d-915215a2fb2b">
+            <componentMoniker Id="bf77ff6a-cfcd-40c0-83c3-460cc40b9622" LastKnownName="TOL.j" />
+            <elementDefinition Id="c64ed762-ffa1-4435-a258-b588805c0c6f" />
+          </dependency>
+          <dependency Id="21d04933-4c8d-489b-942e-dc424a13d4bc">
+            <componentMoniker Id="3a28c089-4097-4e91-be3f-681d4c698c37" LastKnownName="OL.j" />
+            <elementDefinition Id="0bc92fc5-a1ac-4772-b19d-79772d3fd8fb" />
+          </dependency>
+          <dependency Id="404824bf-1ca0-4419-ad87-b8dc139b973d">
+            <componentMoniker Id="5c551ca8-7f39-4568-ab24-5dd183215a13" LastKnownName="SellHistory.j" />
+            <elementDefinition Id="489a8697-6a55-4d39-9632-b5e2a89b9434" />
+          </dependency>
+          <dependency Id="4bbc0fc2-7c17-4eb9-9f73-c639a1e06e9a">
+            <componentMoniker Id="fae80c1b-f0d7-42f8-95e9-2d658fb59fd2" LastKnownName="WriteToDB.j" />
+            <elementDefinition Id="98fe0951-ed8a-4215-ae80-9517d93b5698" />
+          </dependency>
+          <dependency Id="045d7526-baf2-40fa-b518-b5474a53ef21">
+            <componentMoniker Id="b1f93de5-d229-41ce-9af7-9cfc767cf345" LastKnownName="ReadFromDB.j" />
+            <elementDefinition Id="ce8416b4-4a62-4d6e-8172-4d175560b043" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="9141864a-010e-407d-a9de-8beed4c9addf" name="StateDiagram">
+    <elementDefinition Id="23cc704d-0783-4a39-a96f-a349f0edc8db" />
+  </package>
+</componentModel>

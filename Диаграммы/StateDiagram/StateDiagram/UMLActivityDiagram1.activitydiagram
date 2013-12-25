@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="8ee01927-f22f-4dbe-8fda-5357e4ffd98c" name="Activity1" linkedPackageId="fe4300a4-0381-4fb8-8509-b30232deb5f1" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="516778c1-abab-4100-966a-5ffda15e66b5">
+      <elementDefinition Id="80e1b74a-f09b-4e75-9091-e15c3a1cd95b" />
+      <body>Enter eBooker</body>
+    </comment>
+    <comment Id="887d6922-f9da-4b00-b4e4-15dc853e4e89">
+      <elementDefinition Id="481347d7-78df-4ce9-8b67-cdae277a1be8" />
+      <body> Admining</body>
+    </comment>
+    <comment Id="a3ae2d3f-4bdf-485a-943c-7238b378a17f">
+      <elementDefinition Id="e04bf364-9472-495c-a43f-75162f6fff9e" />
+      <body>Add</body>
+    </comment>
+    <comment Id="7597af85-fc31-40d6-9887-cdec185173e9">
+      <elementDefinition Id="a5d92247-4521-404a-8677-57f133df313f" />
+      <body>Sell</body>
+    </comment>
+    <comment Id="6ad25a49-58c4-432d-91f8-68e2b8c49a0e">
+      <elementDefinition Id="9d482938-4362-4e33-a847-0f32733b0947" />
+      <body>Correct</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="faa1f063-c7b1-4c39-b236-2ac7e19ddda2" name="Activity1" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="2f543e13-0c8c-43c7-bf48-e6c2b10bf5cc" />
+        <nodes>
+          <initialNode Id="acd2e632-3462-4b04-93ab-d608b1a0cebf" name="Initial1" isLeaf="false">
+            <elementDefinition Id="20ce9487-cf39-442b-baf6-6e39dac7d8df" />
+            <flowNodeTargets>
+              <controlFlow Id="0c7cb7ac-ad00-453c-9e50-cbfd49918e23" isLeaf="false">
+                <opaqueActionMoniker Id="cb289adc-6d5d-43b6-bd27-cadd9f4929fe" LastKnownName="Show main menu" />
+                <elementDefinition Id="d791f81e-d22e-4677-93ff-9f10c199d204" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="cb289adc-6d5d-43b6-bd27-cadd9f4929fe" name="Show main menu" isLeaf="false">
+            <elementDefinition Id="39af7c71-1d64-4e17-a478-4a72c22345d0" />
+            <flowNodeTargets>
+              <controlFlow Id="d0e20055-28d3-4dfc-84d2-fa9ecae59b16" isLeaf="false">
+                <opaqueActionMoniker Id="6c7e4141-800e-4a63-a373-45867085822b" LastKnownName="Add Good" />
+                <elementDefinition Id="b3641722-3a8c-4121-ab23-9f761fa7add4" />
+              </controlFlow>
+              <controlFlow Id="795ba2ff-87b5-4ce1-9ee0-4b251ff3dba1" isLeaf="false">
+                <opaqueActionMoniker Id="27678cbe-f975-4564-b8a1-47bf2aabbaa5" LastKnownName="Sell Good" />
+                <elementDefinition Id="12597641-968b-4a37-9403-405ab08df2de" />
+              </controlFlow>
+              <controlFlow Id="3732383c-6649-4446-bbd2-4e498b32017b" isLeaf="false">
+                <forkNodeMoniker Id="67e29a76-6cfa-48c6-850d-59c92dfd1752" LastKnownName="Fork3" />
+                <elementDefinition Id="b60d1454-fbee-41d3-b586-c54772638cdd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d34e38f8-793f-4917-9b33-d2a81453f641" name="Ask Pin" isLeaf="false">
+            <elementDefinition Id="57b3ca5f-8a3c-4899-abd0-a62c20da091f" />
+            <flowNodeTargets>
+              <controlFlow Id="505302a0-0880-4a86-9efa-3d284742415b" isLeaf="false">
+                <decisionNodeMoniker Id="76b85557-0fee-4eb6-8f41-27c3c89c7468" LastKnownName="Decision9" />
+                <elementDefinition Id="79ee3a82-1227-4953-84e9-aa7283e8b239" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="74aac4d7-7cbd-4ec8-91bb-981ef627d9bf" name="Work With TOL" isLeaf="false">
+            <elementDefinition Id="ef769e02-94d6-4420-90aa-9d4c109ffa4c" />
+            <flowNodeTargets>
+              <controlFlow Id="cc0556f7-e3d3-47bb-8b48-1e04635ca6bb" isLeaf="false">
+                <opaqueActionMoniker Id="cb289adc-6d5d-43b6-bd27-cadd9f4929fe" LastKnownName="Show main menu" />
+                <elementDefinition Id="3ab5fc19-4cd5-4533-aa72-51da2d54a7e8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="6c7e4141-800e-4a63-a373-45867085822b" name="Add Good" isLeaf="false">
+            <elementDefinition Id="5549683a-0479-4638-a2ff-207404f57371" />
+            <flowNodeTargets>
+              <controlFlow Id="be8b7f39-d799-4b01-8b65-ae7f010d32fe" isLeaf="false">
+                <opaqueActionMoniker Id="cb289adc-6d5d-43b6-bd27-cadd9f4929fe" LastKnownName="Show main menu" />
+                <elementDefinition Id="cb536a51-227c-45ad-a96e-88957d894d30" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="3180c3c4-d6ae-4218-9959-63eaf469997b" name="Work With OL" isLeaf="false">
+            <elementDefinition Id="9e63fdb0-9dc4-4f7e-863a-ce95bb35a098" />
+            <flowNodeTargets>
+              <controlFlow Id="9c325b71-3bfe-4d0e-83d2-88d9ee8fa58a" isLeaf="false">
+                <opaqueActionMoniker Id="cb289adc-6d5d-43b6-bd27-cadd9f4929fe" LastKnownName="Show main menu" />
+                <elementDefinition Id="e535e1cb-e1e6-4697-9328-9b2b679dde59" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="cbed7d50-4cbc-41df-832b-6bf587378309" name="View SellHistory" isLeaf="false">
+            <elementDefinition Id="3a1de183-0e27-4520-9551-046e1a19291f" />
+            <flowNodeTargets>
+              <controlFlow Id="c19b4517-f65f-4d31-8dec-de5e41201277" isLeaf="false">
+                <opaqueActionMoniker Id="cb289adc-6d5d-43b6-bd27-cadd9f4929fe" LastKnownName="Show main menu" />
+                <elementDefinition Id="b400c2d6-e9aa-4b3e-9aa5-7efe9143159f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="27678cbe-f975-4564-b8a1-47bf2aabbaa5" name="Sell Good" isLeaf="false">
+            <elementDefinition Id="7c64a12e-45b2-465a-b263-03c2d63ed050" />
+            <flowNodeTargets>
+              <controlFlow Id="bbb511e5-0aaf-4916-9431-ac5ed658e30c" isLeaf="false">
+                <opaqueActionMoniker Id="cb289adc-6d5d-43b6-bd27-cadd9f4929fe" LastKnownName="Show main menu" />
+                <elementDefinition Id="91f6a24b-8c34-40c8-9b2f-97de4160c3ad" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="ac532f8c-56fb-4fc5-82fc-864fed1f5bc8" name="View GoodDB" isLeaf="false">
+            <elementDefinition Id="39007dc9-dbce-40a8-a634-e7e3170df0cf" />
+            <flowNodeTargets>
+              <controlFlow Id="16941034-b98a-4aef-b16f-b0496fa80210" isLeaf="false">
+                <opaqueActionMoniker Id="96ce32fd-4648-45ed-b80d-d34347580e6a" LastKnownName="View Good" />
+                <elementDefinition Id="52a4b935-c087-4d25-9c68-ebcbe4157a13" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="96ce32fd-4648-45ed-b80d-d34347580e6a" name="View Good" isLeaf="false">
+            <elementDefinition Id="3744f12a-0f29-4d31-adca-becca90086b8" />
+            <flowNodeTargets>
+              <controlFlow Id="15f2c6c1-4a7b-472f-9224-a94bf4623625" isLeaf="false">
+                <forkNodeMoniker Id="9bcdda05-0dd0-4e4e-824a-e8a593f87142" LastKnownName="Fork1" />
+                <elementDefinition Id="bcfafdfb-924d-44b1-bdf9-6d9ae646503f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="da8884b2-ebb2-4e1a-a539-84bc2c49a125" name="Edit Good" isLeaf="false">
+            <elementDefinition Id="4de46f5e-5f3f-4a9f-9db2-3e7962255b68" />
+            <flowNodeTargets>
+              <controlFlow Id="b4365c4f-04fe-40a0-a5df-ce15e0ac9aca" isLeaf="false">
+                <joinNodeMoniker Id="cf9965c5-4a54-41a7-a4ff-aec51aa09250" LastKnownName="Join1" />
+                <elementDefinition Id="5a270cda-25f9-40f8-a3d6-980602473399" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d428d363-a704-4f58-a961-0aa8a04cb8f5" name="Remove Good" isLeaf="false">
+            <elementDefinition Id="ad5ce04c-232b-43fd-8143-e75ed0525f16" />
+            <flowNodeTargets>
+              <controlFlow Id="729c883c-0586-4980-b55e-ea9bacc1a939" isLeaf="false">
+                <joinNodeMoniker Id="cf9965c5-4a54-41a7-a4ff-aec51aa09250" LastKnownName="Join1" />
+                <elementDefinition Id="0f52d040-d8ab-4a67-803c-556499864607" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode Id="9bcdda05-0dd0-4e4e-824a-e8a593f87142" name="Fork1" isLeaf="false">
+            <elementDefinition Id="16179b30-41a3-4bda-927d-005d5920354c" />
+            <flowNodeTargets>
+              <controlFlow Id="9e8dce07-082a-427f-8ddc-782bba2c489a" isLeaf="false">
+                <opaqueActionMoniker Id="d428d363-a704-4f58-a961-0aa8a04cb8f5" LastKnownName="Remove Good" />
+                <elementDefinition Id="fb3438c6-e26a-4745-bb50-edba6bf2d5fa" />
+              </controlFlow>
+              <controlFlow Id="eaa805f5-eed8-499d-b8bc-9d5cb9dd8ade" isLeaf="false">
+                <opaqueActionMoniker Id="da8884b2-ebb2-4e1a-a539-84bc2c49a125" LastKnownName="Edit Good" />
+                <elementDefinition Id="ae8dc4da-65a1-43f5-b0b6-c028c10cd7a5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <joinNode Id="cf9965c5-4a54-41a7-a4ff-aec51aa09250" name="Join1" isLeaf="false">
+            <elementDefinition Id="776430e6-0d7b-4cac-9cf5-6ca5859816d1" />
+            <flowNodeTargets>
+              <controlFlow Id="771066c9-a654-4245-accc-b083e7490220" isLeaf="false">
+                <opaqueActionMoniker Id="d34e38f8-793f-4917-9b33-d2a81453f641" LastKnownName="Ask Pin" />
+                <elementDefinition Id="9fd42d39-3fab-4d34-ae00-88dcfbc4f70a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <decisionNode Id="76b85557-0fee-4eb6-8f41-27c3c89c7468" name="Decision9" isLeaf="false">
+            <elementDefinition Id="c4ef7528-cf83-4d13-8eca-e19b00afe667" />
+            <flowNodeTargets>
+              <controlFlow Id="94956fa1-fa6f-4002-b058-765e50f9d230" isLeaf="false">
+                <opaqueActionMoniker Id="26ecbbb9-1aa0-44e8-8bde-a5953b571408" LastKnownName="Work With Good" />
+                <elementDefinition Id="c751aafd-7aff-411c-818c-fb2c574325a3" />
+              </controlFlow>
+              <controlFlow Id="d233c68f-065a-4f96-a898-a6e5028850e8" isLeaf="false">
+                <opaqueActionMoniker Id="96ce32fd-4648-45ed-b80d-d34347580e6a" LastKnownName="View Good" />
+                <elementDefinition Id="84d19d1e-674b-4a2b-91ae-23589e7bb989" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="26ecbbb9-1aa0-44e8-8bde-a5953b571408" name="Work With Good" isLeaf="false">
+            <elementDefinition Id="e7814a4a-41d3-4226-bb5d-8870780269e5" />
+            <flowNodeTargets>
+              <controlFlow Id="7832a46f-a8ed-4bf7-b0da-9ca4b4543e06" isLeaf="false">
+                <opaqueActionMoniker Id="96ce32fd-4648-45ed-b80d-d34347580e6a" LastKnownName="View Good" />
+                <elementDefinition Id="d0b67fd0-51be-4696-a9d5-93a8324aca33" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode Id="67e29a76-6cfa-48c6-850d-59c92dfd1752" name="Fork3" isLeaf="false">
+            <elementDefinition Id="f13959db-2134-4733-b34d-dd3518df22c2" />
+            <flowNodeTargets>
+              <controlFlow Id="2d9371b5-1895-4993-ba7e-c0a1a74dbc92" isLeaf="false">
+                <opaqueActionMoniker Id="ac532f8c-56fb-4fc5-82fc-864fed1f5bc8" LastKnownName="View GoodDB" />
+                <elementDefinition Id="cc1309bb-c72d-4c89-9ba2-9d4a88cd24dd" />
+              </controlFlow>
+              <controlFlow Id="4fb385b8-1792-4583-862c-a8d49e358325" isLeaf="false">
+                <opaqueActionMoniker Id="3180c3c4-d6ae-4218-9959-63eaf469997b" LastKnownName="Work With OL" />
+                <elementDefinition Id="669e0942-24f3-4f70-8a11-3917b94ef270" />
+              </controlFlow>
+              <controlFlow Id="e61a6371-f2ba-4236-b813-cc23a502342a" isLeaf="false">
+                <opaqueActionMoniker Id="cbed7d50-4cbc-41df-832b-6bf587378309" LastKnownName="View SellHistory" />
+                <elementDefinition Id="55d6b199-32f6-4d3e-9910-986f9288b032" />
+              </controlFlow>
+              <controlFlow Id="1cdf569a-dcf8-48ca-9bde-e2d88349c382" isLeaf="false">
+                <opaqueActionMoniker Id="74aac4d7-7cbd-4ec8-91bb-981ef627d9bf" LastKnownName="Work With TOL" />
+                <elementDefinition Id="7711b890-5e8e-4d34-8356-71ac413e308c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="fe4300a4-0381-4fb8-8509-b30232deb5f1" name="StateDiagram">
+    <elementDefinition Id="23cc704d-0783-4a39-a96f-a349f0edc8db" />
+    <profileInstances>
+      <packageHasProfileInstances Id="07a4f914-8f9c-42dc-8fd1-c30acb9a7680">
+        <profileInstance Id="03a67ffc-e798-4a6f-83de-bec5054bd98d" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="1059980d-e2dd-4886-9579-7f1a05131d8b">
+        <profileInstance Id="65c0b424-28b0-4171-93e2-7c0d2ddfac81" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>
